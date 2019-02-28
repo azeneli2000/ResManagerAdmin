@@ -1,0 +1,4 @@
+C:\ResManagerAdmin\bin\Debug\ResManagerAdmin.exe.config
+C:\ResManagerAdmin\obj\Debug\ResManagerAdmin.csproj.ResolveComReference.cache
+C:\ResManagerAdmin\obj\Debug\ResManagerAdmin.exe
+C:\ResManagerAdmin\obj\Debug\ResManagerAdmin.pdb

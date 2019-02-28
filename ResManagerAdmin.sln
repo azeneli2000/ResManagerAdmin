@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResManagerAdmin", "ResManagerAdmin.csproj", "{236A2016-B304-4D98-82FE-44B386BDA48D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResManager", "ResManager\ResManager\ResManager.csproj", "{66C33BB1-631D-4737-A029-589391EFA851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResManagerLibrary", "ResManagerLibrary\ResManagerLibrary.csproj", "{5A1A893E-CBCF-4F19-AF6B-E22FC535616F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{236A2016-B304-4D98-82FE-44B386BDA48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236A2016-B304-4D98-82FE-44B386BDA48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236A2016-B304-4D98-82FE-44B386BDA48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236A2016-B304-4D98-82FE-44B386BDA48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C33BB1-631D-4737-A029-589391EFA851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C33BB1-631D-4737-A029-589391EFA851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C33BB1-631D-4737-A029-589391EFA851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C33BB1-631D-4737-A029-589391EFA851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1A893E-CBCF-4F19-AF6B-E22FC535616F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1A893E-CBCF-4F19-AF6B-E22FC535616F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1A893E-CBCF-4F19-AF6B-E22FC535616F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1A893E-CBCF-4F19-AF6B-E22FC535616F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

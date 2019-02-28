@@ -1,0 +1,6 @@
+D:\ResManagerPaOferta\ResManagerAdmin\ResManagerLibrary\bin\Debug\ResManagerLibrary.dll
+D:\ResManagerPaOferta\ResManagerAdmin\ResManagerLibrary\bin\Debug\ResManagerLibrary.pdb
+D:\ResManagerPaOferta\ResManagerAdmin\ResManagerLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\ResManagerPaOferta\ResManagerAdmin\ResManagerLibrary\obj\Debug\ResManagerLibrary.dll
+D:\ResManagerPaOferta\ResManagerAdmin\ResManagerLibrary\obj\Debug\ResManagerLibrary.pdb
+D:\ResManagerPaOferta\ResManagerAdmin\ResManagerLibrary\bin\Debug\Janus.Windows.Common.dll

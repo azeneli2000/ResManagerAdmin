@@ -1,0 +1,1138 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{236A2016-B304-4D98-82FE-44B386BDA48D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResManagerAdmin</RootNamespace>
+    <AssemblyName>ResManagerAdmin</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>ResManagerAdmin.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DevComponents.DotNetBar, Version=5.9.0.0, Culture=neutral, PublicKeyToken=6d649f5e9b3afca5" />
+    <Reference Include="DocumentManager, Version=0.9.6.0, Culture=neutral, PublicKeyToken=d9f5cd6d45cde5f3" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.ButtonBar, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.ButtonBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.CalendarCombo.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v2, Version=2.0.1105.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.ExplorerBar, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.ExplorerBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.GridEX.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.TimeLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v2, Version=2.0.1105.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="ResManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ResManager\ResManager\bin\Debug\ResManager.exe</HintPath>
+    </Reference>
+    <Reference Include="ResManagerLibrary, Version=1.0.2634.25184, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ResManagerLibrary\bin\Debug\ResManagerLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisionInfoSolutionLibrary, Version=1.0.2445.17095, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ZedGraph, Version=4.2.1.28690, Culture=neutral" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusDatService\Artikulli.cs" />
+    <Compile Include="BusDatService\Blerje.cs" />
+    <Compile Include="BusDatService\BusinessDelegate.cs" />
+    <Compile Include="BusDatService\DbController.cs" />
+    <Compile Include="BusDatService\DbManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusDatService\DbMapper.cs" />
+    <Compile Include="BusDatService\Fatura.cs" />
+    <Compile Include="BusDatService\Furnitori.cs" />
+    <Compile Include="BusDatService\Global.cs" />
+    <Compile Include="BusDatService\InputController.cs" />
+    <Compile Include="BusDatService\Kamarieri.cs" />
+    <Compile Include="BusDatService\Klienti.cs" />
+    <Compile Include="BusDatService\Oferta.cs" />
+    <Compile Include="BusDatService\Perdorues.cs" />
+    <Compile Include="BusDatService\Receta.cs" />
+    <Compile Include="BusDatService\Rezervimi.cs" />
+    <Compile Include="BusDatService\Shpenzime.cs" />
+    <Compile Include="BusDatService\Statistika.cs" />
+    <Compile Include="BusDatService\Suport.cs" />
+    <Compile Include="BusDatService\Tavolina.cs" />
+    <Compile Include="Forms\frmCmimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCmimet.Designer.cs">
+      <DependentUpon>frmCmimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEkstrat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEkstrat.Designer.cs">
+      <DependentUpon>frmEkstrat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFaturaShfaq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFaturaShfaq.Designer.cs">
+      <DependentUpon>frmFaturaShfaq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFavorites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFavorites.Designer.cs">
+      <DependentUpon>frmFavorites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFavoritet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFavoritet.Designer.cs">
+      <DependentUpon>frmFavoritet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGrupCmimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGrupCmimet.Designer.cs">
+      <DependentUpon>frmGrupCmimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInfoKarikim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInfoKarikim.Designer.cs">
+      <DependentUpon>frmInfoKarikim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKarikoBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKarikoBackUp.designer.cs">
+      <DependentUpon>frmKarikoBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKatShpenzimiMujor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKatShpenzimiMujor.Designer.cs">
+      <DependentUpon>frmKatShpenzimiMujor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimCmimeReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimCmimeReceta.Designer.cs">
+      <DependentUpon>frmKonfigurimCmimeReceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurime.Designer.cs">
+      <DependentUpon>frmKonfigurime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimKlientet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimKlientet.Designer.cs">
+      <DependentUpon>frmKonfigurimKlientet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimCmimeArtikuj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimCmimeArtikuj.Designer.cs">
+      <DependentUpon>frmKonfigurimCmimeArtikuj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimPrinteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimPrinteri.Designer.cs">
+      <DependentUpon>frmKonfigurimPrinteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfiguroRezervime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfiguroRezervime.designer.cs">
+      <DependentUpon>frmKonfiguroRezervime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLevizMallin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLevizMallin.Designer.cs">
+      <DependentUpon>frmLevizMallin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmModifikoFature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmModifikoFature.Designer.cs">
+      <DependentUpon>frmModifikoFature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmModifikoOferteFurnitori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmModifikoOferteFurnitori.Designer.cs">
+      <DependentUpon>frmModifikoOferteFurnitori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrinterat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrinterat.Designer.cs">
+      <DependentUpon>frmPrinterat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrintimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrintimi.Designer.cs">
+      <DependentUpon>frmPrintimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrintPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrintPreview.Designer.cs">
+      <DependentUpon>frmPrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRaportJanus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRaportJanus.designer.cs">
+      <DependentUpon>frmRaportJanus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRecetatprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRecetatprint.Designer.cs">
+      <DependentUpon>frmRecetatprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRecetatPrintimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRecetatPrintimi.Designer.cs">
+      <DependentUpon>frmRecetatPrintimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmArtikujFurnitore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmArtikujFurnitore.Designer.cs">
+      <DependentUpon>frmArtikujFurnitore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHyrje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHyrje.Designer.cs">
+      <DependentUpon>frmHyrje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteShpenzime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteShpenzime.Designer.cs">
+      <DependentUpon>frmKategoriteShpenzime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmArka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmArka.Designer.cs">
+      <DependentUpon>frmArka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInformacione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInformacione.Designer.cs">
+      <DependentUpon>frmInformacione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKerko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKerko.Designer.cs">
+      <DependentUpon>frmKerko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKerkoKategoriteArtikuj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKerkoKategoriteArtikuj.Designer.cs">
+      <DependentUpon>frmKerkoKategoriteArtikuj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNjesiteMatese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNjesiteMatese.Designer.cs">
+      <DependentUpon>frmNjesiteMatese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFormatPagesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFormatPagesa.Designer.cs">
+      <DependentUpon>frmFormatPagesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRezervimetSkaduara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRezervimetSkaduara.Designer.cs">
+      <DependentUpon>frmRezervimetSkaduara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShfaqOferta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShfaqOferta.Designer.cs">
+      <DependentUpon>frmShfaqOferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKrijoOferte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKrijoOferte.Designer.cs">
+      <DependentUpon>frmKrijoOferte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShpenzimetMujore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShpenzimetMujore.Designer.cs">
+      <DependentUpon>frmShpenzimetMujore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVizualizimStafi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVizualizimStafi.Designer.cs">
+      <DependentUpon>frmVizualizimStafi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTurnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTurnet.Designer.cs">
+      <DependentUpon>frmTurnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfiguroPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfiguroPersonel.Designer.cs">
+      <DependentUpon>frmKonfiguroPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWarningKonfiguroIntervale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWarningKonfiguroIntervale.Designer.cs">
+      <DependentUpon>frmWarningKonfiguroIntervale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmXhiroKam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmXhiroKam.Designer.cs">
+      <DependentUpon>frmXhiroKam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmXhiroSipasArtikujve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmXhiroSipasArtikujve.Designer.cs">
+      <DependentUpon>frmXhiroSipasArtikujve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmXhiroSipasFaturave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmXhiroSipasFaturave.Designer.cs">
+      <DependentUpon>frmXhiroSipasFaturave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBilancMujor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBilancMujor.Designer.cs">
+      <DependentUpon>frmBilancMujor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBilancDitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBilancDitor.Designer.cs">
+      <DependentUpon>frmBilancDitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFitimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFitimi.Designer.cs">
+      <DependentUpon>frmFitimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFatura.Designer.cs">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKryejShpenzim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKryejShpenzim.Designer.cs">
+      <DependentUpon>frmKryejShpenzim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShfaqBlerjet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShfaqBlerjet.Designer.cs">
+      <DependentUpon>frmShfaqBlerjet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaqjaKryesore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaqjaKryesore.Designer.cs">
+      <DependentUpon>FaqjaKryesore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhGrupCmimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhGrupCmimi.Designer.cs">
+      <DependentUpon>frmZgjidhGrupCmimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhOpsionFshiFurnitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhOpsionFshiFurnitor.Designer.cs">
+      <DependentUpon>frmZgjidhOpsionFshiFurnitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhPrintiminFitimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhPrintiminFitimi.Designer.cs">
+      <DependentUpon>frmZgjidhPrintiminFitimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhPrintiminXhiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhPrintiminXhiro.Designer.cs">
+      <DependentUpon>frmZgjidhPrintiminXhiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MDIAdminTjeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MDIAdminTjeter.Designer.cs">
+      <DependentUpon>MDIAdminTjeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBlerjeArtikujsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBlerjeArtikujsh.Designer.cs">
+      <DependentUpon>frmBlerjeArtikujsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimFurnitoresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimFurnitoresh.Designer.cs">
+      <DependentUpon>frmKonfigurimFurnitoresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteReceta.Designer.cs">
+      <DependentUpon>frmKategoriteReceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteArtikuj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteArtikuj.Designer.cs">
+      <DependentUpon>frmKategoriteArtikuj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmImazhRestoranti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmImazhRestoranti.Designer.cs">
+      <DependentUpon>frmImazhRestoranti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimArtikujsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimArtikujsh.Designer.cs">
+      <DependentUpon>frmKonfigurimArtikujsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimRecetash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimRecetash.Designer.cs">
+      <DependentUpon>frmKonfigurimRecetash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimTavolinash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKonfigurimTavolinash.Designer.cs">
+      <DependentUpon>frmKonfigurimTavolinash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDergesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDergesa.Designer.cs">
+      <DependentUpon>frmDergesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKontrolloSkorte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKontrolloSkorte.Designer.cs">
+      <DependentUpon>frmKontrolloSkorte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShfaqShpenzime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShfaqShpenzime.Designer.cs">
+      <DependentUpon>frmShfaqShpenzime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRezervime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRezervime.Designer.cs">
+      <DependentUpon>frmRezervime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteTavolina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKategoriteTavolina.Designer.cs">
+      <DependentUpon>frmKategoriteTavolina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPozicionimTavolina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPozicionimTavolina.Designer.cs">
+      <DependentUpon>frmPozicionimTavolina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NumriSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NumriSerial.Designer.cs">
+      <DependentUpon>NumriSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrintPromptXhiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrintPromptXhiro.Designer.cs">
+      <DependentUpon>PrintPromptXhiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rregjistrimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rregjistrimi.Designer.cs">
+      <DependentUpon>Rregjistrimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlaseExcel.cs" />
+    <Compile Include="Properties\Program.cs" />
+    <Compile Include="bin\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BusDatService\DbManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DbManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCmimet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCmimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEkstrat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEkstrat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFaturaShfaq.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFaturaShfaq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFavorites.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFavorites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFavoritet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFavoritet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGrupCmimet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGrupCmimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInfoKarikim.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInfoKarikim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKarikoBackUp.resx">
+      <DependentUpon>frmKarikoBackUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKatShpenzimiMujor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKatShpenzimiMujor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimCmimeReceta.resx">
+      <DependentUpon>frmKonfigurimCmimeReceta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKonfigurime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimKlientet.resx">
+      <DependentUpon>frmKonfigurimKlientet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimCmimeArtikuj.resx">
+      <DependentUpon>frmKonfigurimCmimeArtikuj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimPrinteri.resx">
+      <DependentUpon>frmKonfigurimPrinteri.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfiguroRezervime.resx">
+      <DependentUpon>frmKonfiguroRezervime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLevizMallin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLevizMallin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmModifikoFature.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmModifikoFature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmModifikoOferteFurnitori.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmModifikoOferteFurnitori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrinterat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrinterat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrintimi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrintimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrintPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrintPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRaportJanus.resx">
+      <DependentUpon>frmRaportJanus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRecetatprint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRecetatprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRecetatPrintimi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRecetatPrintimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmArtikujFurnitore.resx">
+      <DependentUpon>frmArtikujFurnitore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHyrje.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHyrje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKategoriteShpenzime.resx">
+      <DependentUpon>frmKategoriteShpenzime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmArka.resx">
+      <DependentUpon>frmArka.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInformacione.resx">
+      <DependentUpon>frmInformacione.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKerko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKerko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKerkoKategoriteArtikuj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKerkoKategoriteArtikuj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNjesiteMatese.resx">
+      <DependentUpon>frmNjesiteMatese.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFormatPagesa.resx">
+      <DependentUpon>frmFormatPagesa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRezervimetSkaduara.resx">
+      <DependentUpon>frmRezervimetSkaduara.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShfaqOferta.resx">
+      <DependentUpon>frmShfaqOferta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKrijoOferte.resx">
+      <DependentUpon>frmKrijoOferte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShpenzimetMujore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShpenzimetMujore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVizualizimStafi.resx">
+      <DependentUpon>frmVizualizimStafi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTurnet.resx">
+      <DependentUpon>frmTurnet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfiguroPersonel.resx">
+      <DependentUpon>frmKonfiguroPersonel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWarningKonfiguroIntervale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWarningKonfiguroIntervale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmXhiroKam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmXhiroKam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmXhiroSipasArtikujve.resx">
+      <DependentUpon>frmXhiroSipasArtikujve.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmXhiroSipasFaturave.resx">
+      <DependentUpon>frmXhiroSipasFaturave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBilancMujor.resx">
+      <DependentUpon>frmBilancMujor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBilancDitor.resx">
+      <DependentUpon>frmBilancDitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFitimi.resx">
+      <DependentUpon>frmFitimi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFatura.resx">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKryejShpenzim.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKryejShpenzim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShfaqBlerjet.resx">
+      <DependentUpon>frmShfaqBlerjet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaqjaKryesore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FaqjaKryesore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZgjidhGrupCmimi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmZgjidhGrupCmimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZgjidhOpsionFshiFurnitor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmZgjidhOpsionFshiFurnitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZgjidhPrintiminFitimi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmZgjidhPrintiminFitimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZgjidhPrintiminXhiro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmZgjidhPrintiminXhiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MDIAdminTjeter.resx">
+      <DependentUpon>MDIAdminTjeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBlerjeArtikujsh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBlerjeArtikujsh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimFurnitoresh.resx">
+      <DependentUpon>frmKonfigurimFurnitoresh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKategoriteReceta.resx">
+      <DependentUpon>frmKategoriteReceta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKategoriteArtikuj.resx">
+      <DependentUpon>frmKategoriteArtikuj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmImazhRestoranti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImazhRestoranti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimArtikujsh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKonfigurimArtikujsh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimRecetash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKonfigurimRecetash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKonfigurimTavolinash.resx">
+      <DependentUpon>frmKonfigurimTavolinash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDergesa.resx">
+      <DependentUpon>frmDergesa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKontrolloSkorte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKontrolloSkorte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShfaqShpenzime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShfaqShpenzime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMenu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRezervime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRezervime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKategoriteTavolina.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKategoriteTavolina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPozicionimTavolina.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPozicionimTavolina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrintPromptXhiro.resx">
+      <DependentUpon>PrintPromptXhiro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporte\arka.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>arka.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporte\CxhiroSipasFaturavePaDetaje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CxhiroSipasFaturavePaDetaje.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporte\XhiroSipasArtikujveRecetave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XhiroSipasArtikujveRecetave.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporte\XhiroSipasFaturaveMeDetaje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XhiroSipasFaturaveMeDetaje.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Raporte\arka.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arka.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporte\CxhiroSipasFaturavePaDetaje.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CxhiroSipasFaturavePaDetaje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporte\XhiroSipasArtikujveRecetave.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XhiroSipasArtikujveRecetave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporte\XhiroSipasFaturaveMeDetaje.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XhiroSipasFaturaveMeDetaje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RegistrationClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\aktivizimi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\help.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\cancelbuild.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\bullet_triangle_blue_pari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\bullet_triangle_blue_djathtas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\bullet_triangle_blue_fundit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\bullet_triangle_blue_majtas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\new_disa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\bullet_triangle_blue_lart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\bullet_triangle_blue_poshte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ngarko_imazh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_new.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\button_ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bundle_024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adresa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksmiletris.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksmiletris1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksmiletris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INFO.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Client.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scheduled Tasks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day_f21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_f16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fshi_historikun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addusers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\week_f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33_ico_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karroce1blu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\411.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karroce1blu24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35_ico_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oferte_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\rezervimetjashteafatit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\dbrestore1.png" />
+    <None Include="bin\Debug\ho0045-64.ico" />
+    <Content Include="Resources\andri copy.gif" />
+    <Content Include="Resources\backup.png" />
+    <None Include="Resources\iconexcel.png" />
+    <None Include="Resources\finance_24.png" />
+    <None Include="Resources\kjo copy tjeter21.png" />
+    <None Include="Resources\mbyll.png" />
+    <None Include="Resources\cancel_f2.png" />
+    <None Include="Resources\dbrestore1.png" />
+    <None Include="Resources\karikobackup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SQLDMO">
+      <Guid>{10010001-E260-11CF-AE68-00AA004A34D5}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Foto\Personeli\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

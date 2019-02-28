@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCaktivizo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEAAA
+        CxABrSO9dQAAAOBJREFUKFOdkLsOAUEUhg8Kt1IiZIsVregU223JFqtTrXgM3mC32F4hKu/gFZSeQCQu
+        i0hcEjW/+RexKmGS72TmnP+bSSZmplIoxOOyuF7ll6UnErK73UR4QVCrYZzPY65pWJVKWOr6V+jQlboq
+        G9PEZTTCyXVx9n2cPQ/HXg+HbjeEe/Y4Y4ZZOnSlmU6HL+8dB9tGAzvLemDbnzz7zDBLh660MhlMi0UE
+        hoF1pfKmWsU6SmTGLB260s5mMVGHVbkc3vpipvZRojNm6dCVjir9XA4DxfBH6IafaCSTf0H3DhaO6VJ2
+        L+oVAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="gridRecetat.LayoutData" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="FOTO"&gt;&lt;Caption&gt;Foto&lt;/Caption&gt;&lt;DataMember&gt;FOTO&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;FOTO&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;54&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="ID_KATEGORIARECETA"&gt;&lt;Caption&gt;ID_KATEGORIARECETA&lt;/Caption&gt;&lt;DataMember&gt;ID_KATEGORIARECETA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_KATEGORIARECETA&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="PERSHKRIMI"&gt;&lt;Caption&gt;Kategoria&lt;/Caption&gt;&lt;DataMember&gt;PERSHKRIMI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;PERSHKRIMI&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="ID_RECETA"&gt;&lt;Caption&gt;Id receta&lt;/Caption&gt;&lt;DataMember&gt;ID_RECETA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_RECETA&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="EMRI"&gt;&lt;Caption&gt;Receta&lt;/Caption&gt;&lt;DataMember&gt;EMRI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;EMRI&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;142&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="ID_ARTIKULLI"&gt;&lt;Caption&gt;Id artikulli&lt;/Caption&gt;&lt;DataMember&gt;ID_ARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_ARTIKULLI&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column5&gt;&lt;Column6 ID="ARTIKULLI"&gt;&lt;Caption&gt;Artikulli&lt;/Caption&gt;&lt;DataMember&gt;ARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ARTIKULLI&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;250&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="SASIA"&gt;&lt;Caption&gt;Sasia&lt;/Caption&gt;&lt;DataMember&gt;SASIA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;SASIA&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column7&gt;&lt;Column8 ID="SASIA_STR"&gt;&lt;Caption&gt;Sasia&lt;/Caption&gt;&lt;DataMember&gt;SASIA_STR&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;SASIA_STR&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;TextAlignment&gt;Far&lt;/TextAlignment&gt;&lt;Width&gt;130&lt;/Width&gt;&lt;/Column8&gt;&lt;Column9 ID="CMIMI"&gt;&lt;Caption&gt;Cmimi i blerjes&lt;/Caption&gt;&lt;DataMember&gt;CMIMI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;FormatString&gt;0.00&lt;/FormatString&gt;&lt;Key&gt;CMIMI&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;TextAlignment&gt;Far&lt;/TextAlignment&gt;&lt;Width&gt;130&lt;/Width&gt;&lt;/Column9&gt;&lt;Column10 ID="VLERA"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;Kosto&lt;/Caption&gt;&lt;DataMember&gt;VLERA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;FormatString&gt;0.00&lt;/FormatString&gt;&lt;Key&gt;VLERA&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;TextAlignment&gt;Far&lt;/TextAlignment&gt;&lt;TotalFormatString&gt;0.00&lt;/TotalFormatString&gt;&lt;/Column10&gt;&lt;Column11 ID="NJESIA"&gt;&lt;Caption&gt;Njesia&lt;/Caption&gt;&lt;DataMember&gt;NJESIA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;NJESIA&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column11&gt;&lt;Column12 ID="ID_KATEGORIAARTIKULLI"&gt;&lt;Caption&gt;Id kategoria artikulli&lt;/Caption&gt;&lt;DataMember&gt;ID_KATEGORIAARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_KATEGORIAARTIKULLI&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column12&gt;&lt;Column13 ID="CHECKED"&gt;&lt;Caption&gt;Zgjidh&lt;/Caption&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;CHECKED&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;Key&gt;CHECKED&lt;/Key&gt;&lt;PrintMode&gt;PrintNever&lt;/PrintMode&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Width&gt;85&lt;/Width&gt;&lt;/Column13&gt;&lt;Column14 ID="RECETA"&gt;&lt;Caption&gt;Receta&lt;/Caption&gt;&lt;DataMember&gt;RECETA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;RECETA&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column14&gt;&lt;Column15 ID="DISPONUESHEM"&gt;&lt;DataMember&gt;DISPONUESHEM&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;DISPONUESHEM&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column15&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;Groups Collection="true"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;2&lt;/ColIndex&gt;&lt;GroupPrefix /&gt;&lt;GroupInterval&gt;Value&lt;/GroupInterval&gt;&lt;/Group0&gt;&lt;Group1 ID="Group1"&gt;&lt;ColIndex&gt;14&lt;/ColIndex&gt;&lt;GroupPrefix /&gt;&lt;HeaderCaption&gt;Receta&lt;/HeaderCaption&gt;&lt;GroupInterval&gt;Value&lt;/GroupInterval&gt;&lt;SortOrder&gt;Descending&lt;/SortOrder&gt;&lt;/Group1&gt;&lt;/Groups&gt;&lt;SortKeys Collection="true"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;6&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;StoredFilters Collection="true"&gt;&lt;StoredFilter0 ID="FilterDisponibilitet"&gt;&lt;FilterCondition&gt;&lt;ColumnIndex&gt;15&lt;/ColumnIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;/FilterCondition&gt;&lt;Key&gt;FilterDisponibilitet&lt;/Key&gt;&lt;/StoredFilter0&gt;&lt;/StoredFilters&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="gridArtikujt.LayoutData" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="ID_ARTIKULLI"&gt;&lt;Caption&gt;Id artikulli&lt;/Caption&gt;&lt;DataMember&gt;ID_ARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_ARTIKULLI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="SASIA"&gt;&lt;Caption&gt;Saaia&lt;/Caption&gt;&lt;DataMember&gt;SASIA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;SASIA&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="NJESIA"&gt;&lt;DataMember&gt;NJESIA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;NJESIA&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="ARTIKULLI"&gt;&lt;Caption&gt;Artikulli&lt;/Caption&gt;&lt;DataMember&gt;ARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ARTIKULLI&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;TextAlignment&gt;Near&lt;/TextAlignment&gt;&lt;Width&gt;121&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="CMIMI"&gt;&lt;Caption&gt;Cmimi/njësi&lt;/Caption&gt;&lt;DataMember&gt;CMIMI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;FormatString&gt;0.00&lt;/FormatString&gt;&lt;Key&gt;CMIMI&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;TextAlignment&gt;Far&lt;/TextAlignment&gt;&lt;Width&gt;83&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="ID_KATEGORIAARTIKULLI"&gt;&lt;Caption&gt;Id kategoria artikulli&lt;/Caption&gt;&lt;DataMember&gt;ID_KATEGORIAARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_KATEGORIAARTIKULLI&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column5&gt;&lt;Column6 ID="SASIA_STR"&gt;&lt;Caption&gt;Sasia&lt;/Caption&gt;&lt;DataMember&gt;SASIA_STR&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;SASIA_STR&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;TextAlignment&gt;Far&lt;/TextAlignment&gt;&lt;Width&gt;95&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="VLERA"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;Vlera&lt;/Caption&gt;&lt;DataMember&gt;VLERA&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;FormatString&gt;0.00&lt;/FormatString&gt;&lt;Key&gt;VLERA&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;TextAlignment&gt;Far&lt;/TextAlignment&gt;&lt;Width&gt;94&lt;/Width&gt;&lt;TotalFormatString&gt;0.00&lt;/TotalFormatString&gt;&lt;/Column7&gt;&lt;Column8 ID="CHECKED"&gt;&lt;Caption&gt;Zgjidh&lt;/Caption&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;CHECKED&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;Key&gt;CHECKED&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Width&gt;56&lt;/Width&gt;&lt;/Column8&gt;&lt;Column9 ID="ID"&gt;&lt;Caption&gt;ID&lt;/Caption&gt;&lt;DataMember&gt;ID&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column9&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;GroupTotals&gt;Never&lt;/GroupTotals&gt;&lt;SortKeys Collection="true"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;4&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="gridaEkstrat.LayoutData" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="KEKSTRA"&gt;&lt;DataMember&gt;KEKSTRA&lt;/DataMember&gt;&lt;Key&gt;KEKSTRA&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;173&lt;/Width&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbKategoriaReceta.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="PERSHKRIMI"&gt;&lt;DataMember&gt;PERSHKRIMI&lt;/DataMember&gt;&lt;Key&gt;PERSHKRIMI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;159&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="ID_KATEGORIARECETA"&gt;&lt;Caption&gt;Kategoria&lt;/Caption&gt;&lt;DataMember&gt;ID_KATEGORIARECETA&lt;/DataMember&gt;&lt;Key&gt;ID_KATEGORIARECETA&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;WatermarkImage /&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;PERSHKRIMI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_KATEGORIARECETA&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="uiGroupBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        TkSuQmCC
+</value>
+  </data>
+  <data name="cmbArtikulli.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="ID_ARTIKULLI"&gt;&lt;DataMember&gt;ID_ARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_ARTIKULLI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="EMRI"&gt;&lt;DataMember&gt;EMRI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;EMRI&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;157&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="NJESIA"&gt;&lt;DataMember&gt;NJESIA&lt;/DataMember&gt;&lt;Key&gt;NJESIA&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="CMIMI"&gt;&lt;DataMember&gt;CMIMI&lt;/DataMember&gt;&lt;Key&gt;CMIMI&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="CMIMI"&gt;&lt;DataMember&gt;CMIMI&lt;/DataMember&gt;&lt;Key&gt;CMIMI&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column4&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;WatermarkImage /&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;EMRI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_ARTIKULLI&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="cmbKategoriteArtikulli.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="ID_KATEGORIAARTIKULLI"&gt;&lt;DataMember&gt;ID_KATEGORIAARTIKULLI&lt;/DataMember&gt;&lt;Key&gt;ID_KATEGORIAARTIKULLI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="PERSHKRIMI"&gt;&lt;DataMember&gt;PERSHKRIMI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;PERSHKRIMI&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;157&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;WatermarkImage /&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;PERSHKRIMI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_KATEGORIAARTIKULLI&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="cmbArtikulliModifikim.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="ID_ARTIKULLI"&gt;&lt;DataMember&gt;ID_ARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_ARTIKULLI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="EMRI"&gt;&lt;DataMember&gt;EMRI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;EMRI&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;157&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="NJESIA"&gt;&lt;DataMember&gt;NJESIA&lt;/DataMember&gt;&lt;Key&gt;NJESIA&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="CMIMI"&gt;&lt;DataMember&gt;CMIMI&lt;/DataMember&gt;&lt;Key&gt;CMIMI&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="CMIMI"&gt;&lt;DataMember&gt;CMIMI&lt;/DataMember&gt;&lt;Key&gt;CMIMI&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column4&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;WatermarkImage /&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;EMRI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_ARTIKULLI&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="cmbKategoriteArtikulliModifikim.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="ID_KATEGORIAARTIKULLI"&gt;&lt;DataMember&gt;ID_KATEGORIAARTIKULLI&lt;/DataMember&gt;&lt;Key&gt;ID_KATEGORIAARTIKULLI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="PERSHKRIMI"&gt;&lt;DataMember&gt;PERSHKRIMI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;PERSHKRIMI&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;157&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;WatermarkImage /&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;PERSHKRIMI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_KATEGORIAARTIKULLI&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="cmbKategoriaArtikujKerkim.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="ID_KATEGORIAARTIKULLI"&gt;&lt;DataMember&gt;ID_KATEGORIAARTIKULLI&lt;/DataMember&gt;&lt;Key&gt;ID_KATEGORIAARTIKULLI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="PERSHKRIMI"&gt;&lt;DataMember&gt;PERSHKRIMI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;PERSHKRIMI&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;159&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;PreviewRow&gt;True&lt;/PreviewRow&gt;&lt;/RootTable&gt;&lt;SearchColumnIndex&gt;1&lt;/SearchColumnIndex&gt;&lt;WatermarkImage /&gt;&lt;IncrementalSearchMode&gt;FirstCharacter&lt;/IncrementalSearchMode&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;PERSHKRIMI&lt;/Key&gt;&lt;DisplayMember&gt;PERSHKRIMI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_KATEGORIAARTIKULLI&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="cmbArtikujtKerkim.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="ID_ARTIKULLI"&gt;&lt;DataMember&gt;ID_ARTIKULLI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;ID_ARTIKULLI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="EMRI"&gt;&lt;DataMember&gt;EMRI&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;EMRI&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;159&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="NJESIA"&gt;&lt;DataMember&gt;NJESIA&lt;/DataMember&gt;&lt;Key&gt;NJESIA&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;WatermarkImage /&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;EMRI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_ARTIKULLI&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="cmbKategoriaRecetaKerkim.LayoutData" xml:space="preserve">
+    <value>&lt;DropDownLayout&gt;&lt;RootTable&gt;&lt;Columns Collection="true"&gt;&lt;Column0 ID="PERSHKRIMI"&gt;&lt;DataMember&gt;PERSHKRIMI&lt;/DataMember&gt;&lt;Key&gt;PERSHKRIMI&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;159&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="ID_KATEGORIARECETA"&gt;&lt;Caption&gt;Kategoria&lt;/Caption&gt;&lt;DataMember&gt;ID_KATEGORIARECETA&lt;/DataMember&gt;&lt;Key&gt;ID_KATEGORIARECETA&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition ID="" /&gt;&lt;/RootTable&gt;&lt;WatermarkImage /&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GridLines&gt;None&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;PERSHKRIMI&lt;/DisplayMember&gt;&lt;ValueMember&gt;ID_KATEGORIARECETA&lt;/ValueMember&gt;&lt;/DropDownLayout&gt;</value>
+  </data>
+  <data name="uiGroupBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        O/9fbe45nZ8BPDQgEwz3RwAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="ds.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="dsReceta.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>79, 17</value>
+  </metadata>
+</root>

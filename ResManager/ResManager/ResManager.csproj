@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66C33BB1-631D-4737-A029-589391EFA851}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResManager</RootNamespace>
+    <AssemblyName>ResManager</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>ResManager.Program</StartupObject>
+    <ApplicationIcon>network.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=5.9.0.0, Culture=neutral, PublicKeyToken=6d649f5e9b3afca5">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentManager, Version=0.9.6.0, Culture=neutral, PublicKeyToken=d9f5cd6d45cde5f3" />
+    <Reference Include="Janus.Windows.ButtonBar, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.ButtonBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.CalendarCombo.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v2, Version=2.0.1105.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.ExplorerBar, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.ExplorerBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.GridEX.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine, Version=1.0.2500.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Janus.Windows.TimeLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v2, Version=2.0.1105.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="ResManagerAdmin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\ResManagerAdmin.exe</HintPath>
+    </Reference>
+    <Reference Include="ResManagerAdmin.vshost, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\ResManagerAdmin.vshost.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox1.designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFavorites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFavorites.designer.cs">
+      <DependentUpon>frmFavorites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKontrolloUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKontrolloUser.Designer.cs">
+      <DependentUpon>frmKontrolloUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogimi.Designer.cs">
+      <DependentUpon>frmLogimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMbyllTurnin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMbyllTurnin.Designer.cs">
+      <DependentUpon>frmMbyllTurnin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMbyllTurninAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMbyllTurninAdmin.Designer.cs">
+      <DependentUpon>frmMbyllTurninAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMbyllTurninAdministratori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMbyllTurninAdministratori.Designer.cs">
+      <DependentUpon>frmMbyllTurninAdministratori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOffer.Designer.cs">
+      <DependentUpon>frmOffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTavolina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTavolina.designer.cs">
+      <DependentUpon>frmTavolina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransfero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransfero.designer.cs">
+      <DependentUpon>frmTransfero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTurni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTurni.designer.cs">
+      <DependentUpon>frmTurni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmXhiroKamarieri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmXhiroKamarieri.designer.cs">
+      <DependentUpon>frmXhiroKamarieri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhTavoline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZgjidhTavoline.Designer.cs">
+      <DependentUpon>frmZgjidhTavoline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MDIResManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MDIResManager.designer.cs">
+      <DependentUpon>MDIResManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFavorites.resx">
+      <DependentUpon>frmFavorites.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKontrolloUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKontrolloUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogimi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMbyllTurnin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMbyllTurnin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMbyllTurninAdmin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMbyllTurninAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMbyllTurninAdministratori.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMbyllTurninAdministratori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOffer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTavolina.resx">
+      <DependentUpon>frmTavolina.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransfero.resx">
+      <DependentUpon>frmTransfero.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTurni.resx">
+      <DependentUpon>frmTurni.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmXhiroKamarieri.resx">
+      <DependentUpon>frmXhiroKamarieri.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZgjidhTavoline.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmZgjidhTavoline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MDIResManager.resx">
+      <DependentUpon>MDIResManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResManagerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResManagerDataSet3.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar-Table.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeecup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ist2_545250_coffee_cup_on_an_oak_restaurant_table.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\tavolinat\tavoline_lire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\tavolinat\tavoline_rezervuar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\tavolinat\tavoline_zene.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\tavolinat\tavoline_zgjedhur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Client.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_button.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_triangle_blue_pari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_triangle_blue_majtas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_triangle_blue_djathtas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_triangle_blue_fundit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelbuild.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ResManagerDataSet3.xsc">
+      <DependentUpon>ResManagerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ResManagerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResManagerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResManagerDataSet3.xss">
+      <DependentUpon>ResManagerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\reload_f16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="network.ico" />
+    <Content Include="Resources\andri.gif" />
+    <None Include="Resources\cancel_f2.png" />
+    <None Include="Resources\close.ico" />
+    <Content Include="Resources\t_lire.png" />
+    <Content Include="Resources\t_rezervuar.png" />
+    <Content Include="Resources\t_zene.png" />
+    <Content Include="Resources\t_zgjedhur.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

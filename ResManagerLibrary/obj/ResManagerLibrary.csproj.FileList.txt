@@ -1,0 +1,5 @@
+bin\Debug\ResManagerLibrary.dll
+bin\Debug\ResManagerLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ResManagerLibrary.dll
+obj\Debug\ResManagerLibrary.pdb
